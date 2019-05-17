@@ -6,4 +6,5 @@ class Node
     @surname = surname
     @next_node = nil
   end
+  
 end

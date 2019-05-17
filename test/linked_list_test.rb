@@ -29,13 +29,17 @@ class LinkedListTest < Minitest::Test
 
   def test_it_can_count_number_of_nodes
     @list.append("West")
-
     assert_equal 1, @list.count
+
+    @list.append("Hardy")
+    assert_equal 2, @list.count
   end
 
   def test_it_can_generate_a_string_of_families_in_the_list
     @list.append("West")
-
     assert_equal "The West family", @list.to_string
+
+    @list.append("Hardy")
+    assert_equal "The West family, followed by the Hardy family", @list.to_string
   end
 end
